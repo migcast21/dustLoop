@@ -60,3 +60,13 @@ body {
 .mainTable {
   font-size: 12px;
 }
+
+.searchBar {
+  width: 25%;
+  font-size: 12px;
+  float: right;
+}
+
+.searchContainer {
+  padding-right: 35px;
+}
