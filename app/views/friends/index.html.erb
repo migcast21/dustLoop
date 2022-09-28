@@ -1,19 +1,22 @@
 <% if user_signed_in? %>
-<div class="container searchContainer">
-<form class="form-control-sm searchBar">
-<%= search_form_for @q do |f| %>
-  <%= f.label :producer_cont %>
-  <%= f.search_field :producer_cont %>
-  <%= f.submit %>
-<% end %>
-</form>
+<div class="searchContainer">
+  <form class="form-control-sm searchBar">
+  <%= search_form_for @q do |f| %>
+    <%= f.label :producer_or_original_source_cont %>
+    <%= f.search_field :producer_or_original_source_cont, class:'searchField'%>
+    <%= f.submit %>
+  <% end %>
+  </form>
 </div>
+<br/>
+<br/>
+<br/>
 <div style="height: 600px;overflow: scroll;" class ="table-responsive-sm mainTable">
   <table class="table table-sm table-striped table-bordered table-hover">
     <thead class='table-dark'>
       <tr>
         <th class='th-sm'>Producer</th>
-        <th class='th-sm'>Original Source</th>
+        <th class='th-sm'>Original Source + Current Sample</th>
         <th class='th-sm'></th>
       </tr>
     </thead>
@@ -25,7 +28,7 @@
             <%= friend.producer %>
           </td>
           <td style="height:20px; overflow:hidden">
-            <%= link_to friend.original_source + ' ' + friend.current_source, friend %>
+            <%= link_to friend.original_source + ' / ' + friend.current_source, friend %>
           </td>
 
             <td><%= button_to "Delete", friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-outline-danger btn-sm' %></td>
