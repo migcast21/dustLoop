@@ -16,8 +16,8 @@
         <td>
           <%= link_to friend.first_name + ' ' + friend.last_name, friend %>
         </td>
-        <td><%= friend.phone %></td>
-        <td><img class = "pikachu" src="<%= friend.twitter %>"></td>
+        <td><%= friend.og_sample %></td>
+        <td><img class = "pikachu" src="<%= friend.current_sample %>"></td>
           <td><%= button_to "Delete", friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-outline-danger btn-sm' %></td>
       </tr>
     <% end %>
