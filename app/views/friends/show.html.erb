@@ -1,7 +1,9 @@
 <div class="jumbotron show">
   <h1 class="display-4">
-    <%= @friend.first_name %>
-    <%= @friend.last_name %>
+    <h2><%= @friend.producer %></h2>
+    <br/>
+    <h5>Original Sample: <%= @friend.first_name %></h5>
+    <h5>Current Sample: <%= @friend.last_name %></h5>
   </h1>
   <iframe width="400" height="200" src="<%= @friend.og_sample %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br/>
