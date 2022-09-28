@@ -35,6 +35,7 @@
 .show {
   font-family: 'IBM Plex Sans Hebrew', sans-serif;
   overflow-x: hidden;
+
 }
 
 .pikachu {
@@ -51,4 +52,8 @@ body {
 
 .showCard {
   max-width: 400px;
+}
+
+.mainTable {
+  font-size: 12px;
 }
