@@ -44,3 +44,7 @@
 body {
   position: relative
 }
+
+.edit {
+  overflow-x: hidden;
+}
