@@ -48,3 +48,7 @@ body {
 .edit {
   overflow-x: hidden;
 }
+
+.showCard {
+  max-width: 400px;
+}

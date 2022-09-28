@@ -1,25 +1,37 @@
 <div class="jumbotron show">
-  <h1 class="display-4">
-    <h2><%= @friend.producer %></h2>
-    <br/>
-    <h5>Original Sample: <%= @friend.first_name %></h5>
-    <h5>Current Sample: <%= @friend.last_name %></h5>
-  </h1>
-  <iframe width="400" height="200" src="<%= @friend.og_sample %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="card-group show">
+    <div class="card showCard">
+      <iframe width="400" height="200" src="<%= @friend.og_sample %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title">Sampled From: <%= @friend.last_name %></h5>
+          <br/>
+          <div class="card-body">
+            <p class="card-text">Producer: <h2><%= @friend.producer %></h2></p>
+            <p class="card-text"><small class="text-muted">[ORIGINAL SAMPLE]</small></p>
+          </div>
+        </div>
+    </div>
+    <div class="card showCard">
+    <iframe width="400" height="200" src="<%= @friend.current_sample %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title">Sampled From: <%= @friend.first_name %></h5>
+          <br/>
+          <div class="card-body">
+            <p class="card-text">Producer: <h2><%= @friend.producer %></h2></p>
+            <p class="card-text"><small class="text-muted">[ORIGINAL SAMPLE]</small></p>
+          </div>
+        </div>
+  </div>
+  </div>
+
+  <%= render @friend %>
   <br/>
-  <iframe width="400" height="200" src="<%= @friend.current_sample %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <p class="lead"><%= @friend.og_sample %></p>
-  <hr class="my-4">
-  <p><%= @friend.current_sample %></p>
+  <div class='btn-group'>
+    <%= link_to "Edit this friend", edit_friend_path(@friend), class:'showButton btn btn-secondary' %>
 
+    <%= button_to "Delete", @friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'showButton btn btn-outline-danger' %>
 
-<%= render @friend %>
-
-<div class='btn-group'>
-  <%= link_to "Edit this friend", edit_friend_path(@friend), class:'showButton btn btn-secondary' %>
-
-  <%= button_to "Delete", @friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'showButton btn btn-outline-danger' %>
-
-  <%= link_to "Back to friends", friends_path, class:'showButton btn btn-dark' %>
+    <%= link_to "Back to friends", friends_path, class:'showButton btn btn-dark' %>
+  </div>
 </div>
-</div>
+
