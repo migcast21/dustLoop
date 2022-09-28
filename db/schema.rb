@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_28_182019) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_28_200654) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "friends", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+    t.string "original_source"
+    t.string "current_source"
     t.string "og_sample"
     t.string "current_sample"
     t.datetime "created_at", null: false

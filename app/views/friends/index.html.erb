@@ -4,11 +4,11 @@
   <table class="table table-striped table-bordered table-hover">
     <thead class='table-dark'>
       <tr>
-        <th>Producer</th>
-        <th>Name</th>
-        <th>Phone</th>
-        <th>Content</th>
-        <th></th>
+        <th class='th-sm'>Producer</th>
+        <th class='th-sm'>Original Source</th>
+        <th class='th-sm'>Current Source</th>
+        <th class='th-sm'>Content</th>
+        <th class='th-sm'></th>
       </tr>
     </thead>
     <tbody>
@@ -19,10 +19,10 @@
             <%= friend.producer %>
           </td>
           <td>
-            <%= link_to friend.first_name + ' ' + friend.last_name, friend %>
+            <%= link_to friend.original_source + ' ' + friend.current_source, friend %>
           </td>
           <td><%= friend.og_sample %></td>
-          <td><img class = "pikachu" src="<%= friend.current_sample %>"></td>
+          <td><%= friend.current_sample %></td>
             <td><%= button_to "Delete", friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-outline-danger btn-sm' %></td>
         </tr>
       <% end %>

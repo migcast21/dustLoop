@@ -72,6 +72,6 @@ class FriendsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def friend_params
-      params.require(:friend).permit(:producer, :first_name, :last_name, :og_sample, :current_sample, :user_id)
+      params.require(:friend).permit(:producer, :original_source, :current_source, :og_sample, :current_sample, :user_id)
     end
 end
