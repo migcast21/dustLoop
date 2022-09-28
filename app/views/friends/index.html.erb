@@ -6,8 +6,6 @@
       <tr>
         <th class='th-sm'>Producer</th>
         <th class='th-sm'>Original Source</th>
-        <th class='th-sm'>Current Source</th>
-        <th class='th-sm'>Content</th>
         <th class='th-sm'></th>
       </tr>
     </thead>
@@ -21,8 +19,7 @@
           <td style="height:20px; overflow:hidden">
             <%= link_to friend.original_source + ' ' + friend.current_source, friend %>
           </td>
-          <td><%= friend.og_sample %></td>
-          <td><%= friend.current_sample %></td>
+
             <td><%= button_to "Delete", friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-outline-danger btn-sm' %></td>
         </tr>
       <% end %>
