@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+ .showButton {
+   display: block;
+
+ }
+
+ .editButton {
+   display: inline-block;
+   margin-left: 10px !important;
+}
+
+.logo {
+  font-family: 'Big Shoulders Inline Text', cursive;
+}
+
+.table {
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+
+.show {
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}

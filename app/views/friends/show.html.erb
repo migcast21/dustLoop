@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron show">
   <h1 class="display-4">
     <%= @friend.first_name %>
     <%= @friend.last_name %>
@@ -6,14 +6,15 @@
   <p class="lead"><%= @friend.phone %></p>
   <hr class="my-4">
   <p><%= @friend.twitter %></p>
-</div>
+
 
 <%= render @friend %>
 
-<div>
-  <%= link_to "Edit this friend", edit_friend_path(@friend), class:'btn btn-secondary' %>
+<div class='btn-group'>
+  <%= link_to "Edit this friend", edit_friend_path(@friend), class:'showButton btn btn-secondary' %>
 
-  <%= button_to "Delete", @friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-outline-danger btn-sm' %>
+  <%= button_to "Delete", @friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'showButton btn btn-outline-danger' %>
 
-  <%= link_to "Back to friends", friends_path, class:'btn btn-dark' %>
+  <%= link_to "Back to friends", friends_path, class:'showButton btn btn-dark' %>
+</div>
 </div>
