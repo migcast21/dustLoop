@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 
-<div class ="table-responsive-sm mainTable">
-  <table class="table table-striped table-bordered table-hover">
+<div style="height: 600px;overflow: scroll;" class ="table-responsive-sm mainTable">
+  <table class="table table-sm table-striped table-bordered table-hover">
     <thead class='table-dark'>
       <tr>
         <th class='th-sm'>Producer</th>
@@ -18,7 +18,7 @@
           <td>
             <%= friend.producer %>
           </td>
-          <td>
+          <td style="height:20px; overflow:hidden">
             <%= link_to friend.original_source + ' ' + friend.current_source, friend %>
           </td>
           <td><%= friend.og_sample %></td>
