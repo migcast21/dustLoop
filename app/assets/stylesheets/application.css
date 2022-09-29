@@ -84,6 +84,6 @@ body {
   font-family: 'IBM Plex Sans Hebrew', sans-serif;
 }
 
-body {
-  height: 450px;
+.newButton {
+  position: fixed;
 }
