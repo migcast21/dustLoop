@@ -30,7 +30,7 @@
               <%= link_to friend.original_source + ' + ' + friend.current_source, friend %>
             </td>
 
-              <td><%= button_to "Delete", friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-outline-danger btn-sm' %></td>
+              <td><%= button_to "Delete", friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-danger btn-sm' %></td>
           </tr>
         <% end %>
       <% end %>
