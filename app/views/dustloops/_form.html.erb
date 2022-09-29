@@ -1,10 +1,10 @@
-<%= form_with(model: friend) do |form| %>
-  <% if friend.errors.any? %>
+<%= form_with(model: dustloop) do |form| %>
+  <% if dustloop.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
+      <h2><%= pluralize(dustloop.errors.count, "error") %> prohibited this dustloop from being saved:</h2>
 
       <ul>
-        <% friend.errors.each do |error| %>
+        <% dustloop.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -38,7 +38,7 @@
 
   <div class="field form-group">
     <% form.label :user_id, style: "display: block" %>
-    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value: current_user.id, type: :hidden %>
+    <%= form.number_field :user_id, id: :dustloop_user_id, class:"form-control", value: current_user.id, type: :hidden %>
   </div>
 
   <br/>

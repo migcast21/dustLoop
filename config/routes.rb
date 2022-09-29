@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   end
 
   resources :user
-  resources :friends
+  resources :dustloops
   # get 'home/index'
   get 'home/about'
-  root 'friends#index'
+  root 'dustloops#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

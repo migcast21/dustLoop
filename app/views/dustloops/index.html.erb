@@ -20,16 +20,16 @@
         </tr>
       </thead>
       <tbody>
-      <% @friends.each do |friend| %>
-        <% if friend.user == current_user %>
+      <% @dustloops.each do |dustloop| %>
+        <% if dustloop.user == current_user %>
           <tr>
             <td>
-              <%= friend.producer %>
+              <%= dustloop.producer %>
             </td>
             <td style="height:20px; overflow:hidden">
-              <%= link_to friend.original_source + ' + ' + friend.current_source, friend %>
+              <%= link_to dustloop.original_source + ' + ' + dustloop.current_source, dustloop %>
             </td>
-              <td><%= button_to "Delete", friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-danger btn-sm' %></td>
+              <td><%= button_to "Delete", dustloop, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-danger btn-sm' %></td>
           </tr>
         <% end %>
       <% end %>
@@ -38,7 +38,7 @@
   </div>
 </div>
 <br/>
-<%= link_to "add a sample", new_friend_path, class: 'newButton btn btn-dark' %>
+<%= link_to "add a sample", new_dustloop_path, class: 'newButton btn btn-dark' %>
 
 <% else %>
   <div class='container main'>

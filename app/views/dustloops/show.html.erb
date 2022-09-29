@@ -1,0 +1,39 @@
+<div class="jumbotron show">
+  <div class="card-group show">
+    <div class="card showCard">
+        <iframe width="400" height="200" src="<%= @dustloop.og_sample %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <h3 class="card-title">SAMPLED FROM</h3>
+            <h5 class="card-text"><%= @dustloop.original_source %></h5>
+            <br/>
+              <div class="card-body">
+                <p class="card-text">Producer: <h2><%= @dustloop.producer %></h2></p>
+                <p class="card-text"><small class="text-muted">[ORIGINAL SAMPLE]</small></p>
+              </div>
+          </div>
+    </div>
+    <div class="card showCard">
+      <iframe width="400" height="200" src="<%= @dustloop.current_sample %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <h3 class="card-title">SAMPLED IN</h3>
+            <h5 class="card-text"><%= @dustloop.current_source %></h5>
+            <br/>
+              <div class="card-body">
+              <p class="card-text">Producer: <h2><%= @dustloop.producer %></h2></p>
+              <p class="card-text"><small class="text-muted">[CURRENT SAMPLE]</small></p>
+              </div>
+          </div>
+    </div>
+  </div>
+
+  <%= render @dustloop %>
+  <br/>
+  <div class='btn-group'>
+    <%= link_to "edit this sample listing", edit_dustloop_path(@dustloop), class:'showButton btn btn-secondary' %>
+
+    <%= button_to "delete", @dustloop, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'showButton btn btn-outline-danger' %>
+
+    <%= link_to "back to sample collection", dustloops_path, class:'showButton btn btn-dark' %>
+  </div>
+</div>
+
