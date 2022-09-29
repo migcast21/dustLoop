@@ -1,4 +1,5 @@
 <% if user_signed_in? %>
+<div class="mainPage">
 <div class="searchContainer">
   <form class="form-control-sm searchBar">
   <%= search_form_for @q do |f| %>
@@ -8,7 +9,6 @@
   <% end %>
   </form>
 </div>
-<br/>
 <br/>
 <div style="height: 500px;overflow: scroll;" class ="table-responsive-sm mainTable">
   <table class="table table-sm table-striped table-bordered table-hover">
@@ -36,6 +36,7 @@
     <% end %>
     </tbody>
   </table>
+</div>
 </div>
 
 <%= link_to "New friend", new_friend_path, class: 'newButton btn btn-secondary' %>

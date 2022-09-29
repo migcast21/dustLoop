@@ -87,3 +87,7 @@ body {
 .newButton {
   position: absolute;
 }
+
+.mainPage {
+  overflow-y: hidden;
+}
