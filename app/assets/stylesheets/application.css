@@ -91,3 +91,7 @@ body {
 .mainPage {
   overflow-y: hidden;
 }
+
+.nav-item {
+  font-family: 'Big Shoulders Inline Text', cursive;
+}
