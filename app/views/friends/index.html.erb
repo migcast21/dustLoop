@@ -3,7 +3,7 @@
   <div class="searchContainer">
     <form class="form-control-sm searchBar">
     <%= search_form_for @q do |f| %>
-      <%= f.label :producer_or_original_source_cont %>:
+      <%= f.label :producer_or_original_source_or_current_source_cont, 'Search by Producer, Year, & Title of Original/Current' %>:
       <%= f.search_field :producer_or_original_source_or_current_source_cont, class:'searchField', placeholder:'type in here'%>
       <%= f.submit class:'btn btn-sm btn-dark' %>
     <% end %>
