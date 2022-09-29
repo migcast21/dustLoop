@@ -75,3 +75,11 @@ body {
   width: 180px;
   min-width: 10px;
 }
+
+.main {
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+
+.about {
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
