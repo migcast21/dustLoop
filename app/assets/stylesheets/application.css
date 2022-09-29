@@ -94,6 +94,11 @@ body {
 .nav-item {
   font-family: 'Big Shoulders Inline Text', cursive;
 }
-a:visited,hover,active,link{
+
+a{
+  color: white;
+}
+
+a:hover{
   color: white;
 }
