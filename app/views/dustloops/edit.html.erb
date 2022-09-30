@@ -5,10 +5,10 @@
 
 <br>
   <div class = 'text-center'>
-    <%= link_to "Show this dustloop", @dustloop, class:'editButton btn btn-secondary' %>
+  <%= link_to raw("<i class=\"bi bi-vinyl\" style='font-style:normal;'>  back to dustloop</i>"), @dustloop, class: 'editButton btn btn-secondary' %>
 
-    <%= button_to "Delete", @dustloop, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'editButton btn btn-outline-danger' %>
-    
-    <%= link_to "Back to dustloops", dustloops_path, class:'editButton btn btn-dark' %>
+    <%= link_to raw("<i class=\"bi bi-disc\" style='font-style:normal;'>  back to sample collection</i>"), dustloops_path, class:  'btn btn-dark' %>
   </div>
 </div>
+
+

@@ -29,11 +29,13 @@
   <%= render @dustloop %>
   <br/>
   <div class='btn-group'>
-    <%= link_to "edit this sample listing", edit_dustloop_path(@dustloop), class:'showButton btn btn-secondary' %>
+  <%= link_to raw("<i class=\"bi bi-pencil\" style='font-style:normal;'> edit this sample collection</i>"), edit_dustloop_path(@dustloop), class: 'showButton btn btn-secondary' %>
 
-    <%= button_to "delete", @dustloop, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:'showButton btn btn-outline-danger' %>
+  <%= link_to raw("<i class=\"bi bi-trash\" style='font-style:normal;'> delete</i>"), @dustloop, form: { data: {turbo_confirm: "Are you sure?" } }, method: :delete, class:'showButton btn btn-outline-danger' %>
 
-    <%= link_to "back to sample collection", dustloops_path, class:'showButton btn btn-dark' %>
+  <%= link_to raw("<i class=\"bi bi-disc\" style='font-style:normal;'>  back to sample collection</i>"), dustloops_path, class: 'showButton btn btn-dark' %>
   </div>
 </div>
+
+
 

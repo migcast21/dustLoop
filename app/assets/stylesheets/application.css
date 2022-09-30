@@ -115,3 +115,7 @@ a:hover{
 #pagination {
   color: black;
 }
+
+.newButtonGroup {
+  margin: 0 auto;
+}
