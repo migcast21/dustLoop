@@ -30,4 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  views:
+    pagination:
+      next: '<i class="bi bi-arrow-right-short paginationIcon"></i>'
+      previous: '<i class="bi bi-arrow-left-short paginationIcon"></i>'
+      first: '<i class="bi bi-arrow-up-left-circle-fill paginationIcon"></i>'
+      last: '<i class="bi bi-arrow-up-right-circle-fill paginationIcon"></i>'

@@ -102,3 +102,7 @@ a{
 a:hover{
   color: white;
 }
+
+.paginationIcon {
+  color: black;
+}
