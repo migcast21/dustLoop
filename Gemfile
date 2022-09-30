@@ -2,8 +2,6 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 
-gem 'kaminari'
-
 
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
