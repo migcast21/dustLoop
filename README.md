@@ -1,6 +1,6 @@
 ## dustLoops App
 
-*[General Info](#general-info)
+
 
 Live Site Link: https://murmuring-coast-08834.herokuapp.com/
 
@@ -9,3 +9,7 @@ This repository contains a Ruby on Rails application created for the final Capst
 ## General Info
 
 sdfsdfdsfsdfsdfsdfsdfsdfsdf
+
+## Technologies
+
+### Approach
