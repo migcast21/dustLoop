@@ -5,7 +5,7 @@ class DustloopsController < ApplicationController
   # GET /dustloops or /dustloops.json
   def index
     @q = Dustloop.ransack(params[:q])
-    @dustloops = @q.result.paginate(:page => params[:page], :per_page => 9)
+    @dustloops = @q.result.all.page(params[:page])
   end
 
   # GET /dustloops/1 or /dustloops/1.json

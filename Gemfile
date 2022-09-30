@@ -1,11 +1,9 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+gem 'kaminari'
 
-
-gem 'will_paginate', '~> 3.1', '>= 3.1.6'
-
-gem 'will_paginate-bootstrap-style'
+gem 'bootstrap5-kaminari-views', '~> 0.0.1'
 
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
