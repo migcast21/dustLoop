@@ -105,5 +105,9 @@ a:hover{
 
 .paginationIcon {
   color: black;
-  font-size: 12px;
+  font-size:12px;
+}
+
+#pagination {
+  color: black;
 }
