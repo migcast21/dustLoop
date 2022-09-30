@@ -6,7 +6,7 @@ Live Site Link: https://murmuring-coast-08834.herokuapp.com/
 
 This repository contains a Ruby on Rails application created for the final Capstone Project of General Assembly's Software Engineering course. 
 
-Dustloop is an app that allows the user to create an account in order to create and hold a personal list of instances of samples in music along with the original source. There is no popular defined term for this combination of original sample and current usage, and so here a singular unit can be defined as a dustLoop, that can be further created, edited, and removed by the user. Dustloop is all about DITC -- Digging in the Crates, but also Database Implementation through CRUD. 
+Dustloop is an app that allows the user to create an account in order to create and hold a personal list of instances of samples in music along with the original source. There is no popular defined term for this combination of original sample and current usage, and so here a singular unit can be defined as one(1) dustLoop, that can be further created, edited, and removed by the user. Dustloop is all about DITC -- Digging in the Crates, but also Database Implementation through CRUD. 
 
 It is important the user be able to access the specific moment(s) in the song that the sampling occurred, and also the specific moment(s) in the newer song when the sample was used. In doing so, the user has both sets of data readily available anytime stricter analysis of the producer's techniques, original intent, stylistic choices, etc. is necessary.
 
