@@ -36,6 +36,8 @@
       </tbody>
     </table>
   </div>
+  <%= paginate @dustloops, theme: 'bootstrap-5',
+  pagination_class: "pagination-sm flex-wrap justify-content-center about" %>
 </div>
 <br/>
 <%= link_to "add a dustloop", new_dustloop_path, class: 'newButton btn btn-dark' %>

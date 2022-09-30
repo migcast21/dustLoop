@@ -8,6 +8,8 @@ Spent most of the first week familiarizing myself with Ruby/Rails
 
 9/28 - Resolved issues with signing out. Inserted iframes. Switched database from sqlite3 to Postgresql. Figured out Ransack, implemented both search and sort.
 
-9/29 - Decided on a name, and variables. Successfully renamed all variables, controllers, models, views, tests, helpers, from Friends variables to Dustloop ones
+9/29 - Decided on a name, and variables. Successfully renamed all variables, controllers, models, views, tests, helpers, from Friends variables to Dustloop ones. 
+
+Implemented pagination with the kaminari gem, bootstrap. Figured out how to combine ransack and kaminari 
 
 A little bit of styling was done on each day.
