@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'kaminari'
 
+gem "ransack", "~> 3.2"
+
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
 ruby "3.1.2"
@@ -80,4 +82,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem "ransack", "~> 3.2"
+
