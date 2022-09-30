@@ -36,6 +36,7 @@
       </tbody>
     </table>
   </div>
+    <%= will_paginate @dustloops, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
 </div>
 <br/>
 <%= link_to "add a dustloop", new_dustloop_path, class: 'newButton btn btn-dark' %>
