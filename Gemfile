@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'kaminari'
 
-gem 'bootstrap5-kaminari-views', '~> 0.0.1'
+
 
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
