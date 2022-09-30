@@ -5,7 +5,7 @@ class DustloopsController < ApplicationController
   # GET /dustloops or /dustloops.json
   def index
     @q = Dustloop.ransack(params[:q])
-    @dustloops = @q.result.page(params[:page]).per(10).order(:producer)
+    @dustloops = @q.result.page(params[:page]).order(:producer).per(10)
   end
 
   # GET /dustloops/1 or /dustloops/1.json
