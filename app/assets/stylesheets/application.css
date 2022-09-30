@@ -95,6 +95,10 @@ body {
   font-family: 'Big Shoulders Inline Text', cursive;
 }
 
+.navEdit {
+  background-color: white;
+}
+
 a{
   color: white;
 }
