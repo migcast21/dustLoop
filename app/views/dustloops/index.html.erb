@@ -10,7 +10,11 @@
     </form>
   </div> 
   <br/>
-  <%= paginate @dustloops %>
+<%= @dustloops.count %>
+/
+<%= Dustloop.count %>
+<br/>
+<%== pagy_bootstrap_nav(@pagy) %>
   <div style="height: 450px;overflow: scroll;" class ="table-responsive-sm mainTable">
     <table class="table table-sm table-striped table-bordered table-hover table-dark">
       <thead>

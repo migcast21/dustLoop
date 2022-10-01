@@ -6,6 +6,8 @@ class DustloopsController < ApplicationController
   def index
     @q = Dustloop.ransack(params[:q])
     @dustloops = @q.result.page(params[:page]).order(:producer)
+    @pagy, @dustloops = pagy(@q.result.order(producer: :asc), items: 17)
+
   end
 
   # GET /dustloops/1 or /dustloops/1.json
