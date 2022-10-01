@@ -1,0 +1,19 @@
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong><%= comment.name %>:</strong>
+          <%= comment.comment %>
+        </p>
+      </div>
+    </div>
+     <%= link_to 'Delete', [comment.dustloop, comment],
+                  method: :delete, class: "button is-danger", data: { confirm: 'Are you sure?' } %>
+  </article>
+</div>
+
+<%= link_to raw("<i class=\"bi bi-trash2\" style='font-style:normal;'> delete comment</i>"), [comment.dustloop, comment], form: { data: {turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-outline-danger' %>
+
+
+

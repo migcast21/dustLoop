@@ -5,8 +5,11 @@ Rails.application.routes.draw do
      get '/users/sign_out' => 'devise/sessions#destroy'     
   end
 
+
+
   resources :user
-  resources :dustloops
+  resources :dustloops do  resources :comments
+  end
   # get 'home/index'
   get 'home/about'
   root 'dustloops#index'

@@ -36,6 +36,18 @@
   <%= link_to raw("<i class=\"bi bi-disc\" style='font-style:normal;'>  back to sample collection</i>"), dustloops_path, class: 'showButton btn btn-dark' %>
   </div>
 </div>
-
 <%= social_share_button_tag(@dustloop.producer) %>
+<br/>
+<section class="section comments">
+    <div class="container">
+        <h2 class="subtitle is-5"><strong><%= @dustloop.comments.count %></strong> Comments</h2>
+        <br/>
+        <%= render @dustloop.comments %>
+        <div class="comment-form">
+            <hr />
+            <h3 class="subtitle is-3">Leave a reply</h3>
+             <%= render 'comments/form' %>
+        </div>
+    </div>
+</section>
 
