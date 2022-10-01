@@ -40,11 +40,12 @@
 <br/>
 <section class="section comments">
     <div class="container">
+    <hr/>
         <h2 class="subtitle is-5"><strong><%= @dustloop.comments.count %></strong> Comments</h2>
         <br/>
         <%= render @dustloop.comments %>
         <div class="comment-form">
-            <hr />
+            <hr/>
             <h3 class="subtitle is-3">Leave a reply</h3>
              <%= render 'comments/form' %>
         </div>
