@@ -13,7 +13,7 @@
   </article>
 </div>
 
-<%= link_to raw("<i class=\"bi bi-trash2\" style='font-style:normal;'> delete comment</i>"), [comment.dustloop, comment], form: { data: {turbo_confirm: "Are you sure?" } }, method: :delete, class:'btn btn-outline-danger' %>
+<%= button_to raw("<i class=\"bi bi-trash2\" style='font-style:normal;'> delete comment</i>"), dustloop_comment_path(comment.dustloop, comment), method: :delete, form: { data: {turbo_confirm: "Are you sure?" } }, class:'btn btn-outline-danger' %>
 
 
 
