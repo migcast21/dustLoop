@@ -12,7 +12,7 @@ It is important the user be able to access the specific moment(s) in the song th
 
 The app utilizes devise to integrate fully functional login authentication. This is required before creating a collection due to the inherent nature of wanting to keep discovered samples private, although the ability to share private lists with others will be explored in the future.
 
-The app utilizes several Rails technologies to neatly organize and adjust the data -- the ability to search, sort columns, and navigate via pagination (these sample lists can get long) all contribute to the snappy feel. It is fully responsive and preferable on mobile.
+The app utilizes several Rails technologies to neatly organize and adjust the data -- the ability to search, sort columns, navigate via pagination (these sample lists can get long), and add comments on each individual dustLoop all contribute to the snappy feel. It is fully responsive on mobile.
 
 ## Technologies
 - Ruby on Rails
