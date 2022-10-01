@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+gem 'pagy'
+
 gem 'simple_form'
 
 gem 'social-share-button'
