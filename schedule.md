@@ -14,4 +14,6 @@ Spent most of the first week familiarizing myself with Ruby/Rails
 
 9/30 night - Was able to implement a third table and a comment system, appears on each show page and comments can be deleted as well.
 
+9/31 - Successfully replaced kaminari with pagy. Still issues adding to table/paginate per, reverted back to kaminari
+
 A little bit of styling was done on each day.

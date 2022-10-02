@@ -10,7 +10,7 @@ Dustloop is an app that allows the user to create and hold a personal list of in
 
 It is important the user be able to access the specific moment(s) in the song that the sampling occurred, and also the specific moment(s) in the newer song when the sample was used. In doing so, the user has both sets of data readily available anytime stricter analysis of the producer's techniques, original intent, stylistic choices, etc. is necessary.
 
-The app utilizes devise to integrate fully functional login authentication. This is required before creating a collection due to the inherent nature of wanting to keep discovered samples private, although the ability to share private lists with others will be explored in the future.
+The app utilizes devise to integrate fully functional login authentication. This is required before creating a collection due to the inherent nature of wanting to keep discovered samples private, although the ability to share private lists with others will be explored in the future. Users also have the ability to add comments to listings as they like through the commenting system.
 
 The app utilizes several Rails technologies to neatly organize and adjust the data -- the ability to search, sort columns, navigate via pagination (these sample lists can get long), and add comments on each individual dustLoop all contribute to the snappy feel. It is fully responsive on mobile.
 
