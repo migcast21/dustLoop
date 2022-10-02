@@ -14,5 +14,7 @@ The app utilizes devise to integrate fully functional login authentication. This
 
 The app utilizes several Rails technologies to neatly organize and adjust the data -- the ability to search, sort columns, navigate via pagination (these sample lists can get long), and add comments on each individual dustLoop all contribute to the snappy feel. It is fully responsive on mobile.
 
+10/2 - issue - upon creating an account there are already 2 empty pages in the table, issue with pagination
+
 ## Technologies
 - Ruby on Rails
