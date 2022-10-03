@@ -16,4 +16,6 @@ Spent most of the first week familiarizing myself with Ruby/Rails
 
 9/31 - Successfully replaced kaminari with pagy. Still issues adding to table/paginate per, reverted back to kaminari
 
-A little bit of styling was done on each day.
+10/1 - Fixed about me, little details
+
+A little bit of styling was done on each day. Overall, pagination doesn't work as I'd like it to, will definitely try to perfect that.

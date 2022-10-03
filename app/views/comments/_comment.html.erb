@@ -10,7 +10,7 @@
     </div>
      <%= link_to 'Delete', [comment.dustloop, comment],
                   method: :delete, class: "button is-danger", data: { confirm: 'Are you sure?' } %>
-  </article>
+  </article> 
 </div>
 
 <%= button_to raw("<i class=\"bi bi-trash2\" style='font-style:normal;'> delete comment</i>"), dustloop_comment_path(comment.dustloop, comment), method: :delete, form: { data: {turbo_confirm: "Are you sure?" } }, class:'btn btn-outline-danger' %>
